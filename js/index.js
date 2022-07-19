@@ -4,7 +4,20 @@ const CSVToArray = (data, delimiter = '|', omitFirstRow = false) =>
     .split('\n')
     .map(v => v.split(delimiter));
 
-let words = CSVToArray(./lib/test.csv);
+let words = "";
+
+fetch('./lib/test.txt')
+    .then(response => response.text())
+    .then(data => {
+      // Do something with your data
+      // console.log(data);
+      words = data;
+      //words = CSVToArray(data);
+    });
+
+// words = CSVToArray(words);
+
+document.querySelector('.words').innerHTML = words;
 
 const img = [
   'https://octodex.github.com/images/steroidtocat.png',
