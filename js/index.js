@@ -17,7 +17,7 @@ fetch('./lib/test.txt')
 
 // words = CSVToArray(words);
 
-document.querySelector('.words').innerHTML = words;
+document.querySelector('.words').innerHTML = "Testing 1 2 3";
 
 const img = [
   'https://octodex.github.com/images/steroidtocat.png',
