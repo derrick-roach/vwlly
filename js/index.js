@@ -19,6 +19,8 @@ fetch('./lib/test.txt')
 
 document.querySelector('.words').innerHTML = 'Testing 1 2 3';
 
+/* 
+
 const img = [
   'https://octodex.github.com/images/steroidtocat.png',
   'https://octodex.github.com/images/megacat-2.png',
